@@ -15,8 +15,8 @@
 extern "C" {
 #endif
 
-#define MAX_TEX_WIDTH 768
-#define MAX_TEX_HEIGHT 480
+#define MAX_TEX_WIDTH 1920
+#define MAX_TEX_HEIGHT 1088
 
 #define MAX_WIDTH 1920
 #define MAX_HEIGHT 1088
