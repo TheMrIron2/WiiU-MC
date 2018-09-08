@@ -33,8 +33,8 @@ bool need_wait=false;
 
 GXRModeObj *vmode; // Menu video mode
 u8 * videoScreenshot = NULL;
-int screenheight = 480;
-int screenwidth = 640;
+int screenheight = 704;
+int screenwidth = 960;
 u32 FrameTimer = 0;
 bool drawGui = false;
 
@@ -254,20 +254,20 @@ InitVideo ()
 
 	if (CONF_GetAspectRatio() == CONF_ASPECT_16_9)
 	{
-		screenwidth = 768;
-		vmode->viWidth = 704;
-        vmode->fbWidth = 640;
-        vmode->efbHeight = 480;
-        vmode->xfbHeight = 480;
-        vmode->viHeight = 480;
+		screenwidth = 1280;
+		vmode->viWidth = 1280;
+        vmode->fbWidth = 1280;
+        vmode->efbHeight = 704;
+        vmode->xfbHeight = 704;
+        vmode->viHeight = 704;
 	}
 	else
 	{
-		vmode->viWidth = 704;
-        vmode->fbWidth = 640;
-        vmode->efbHeight = 480;
-        vmode->xfbHeight = 480;
-        vmode->viHeight = 480;
+		vmode->viWidth = 960;
+        vmode->fbWidth = 960;
+        vmode->efbHeight = 704;
+        vmode->xfbHeight = 704;
+        vmode->viHeight = 704;
 	}
 
 	if (pal)
